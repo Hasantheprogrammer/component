@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">  
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<header>
+  <div class="container mb-5">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg menu">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand" href="index.html">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-menu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+  </div>
+</header>
+
+<section class="slider">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <!-- sliders -->
+        <div id="sliders" class="carousel slide carousel-fade">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#sliders" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#sliders" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#sliders" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/dylan-mcleod-Q81AduLKMMc-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/konstantinos-papadopoulos-bTZRESZHNGU-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/nathan-anderson-XENuKo9Gn8k-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#sliders" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#sliders" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- sliders -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- accordion  -->
+        <div class="accordion" id="accordions">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collOne" aria-expanded="true" aria-controls="collOne">
+                <p class="h6 mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, repellendus?</p>
+              </button>
+            </h2>
+            <div id="collOne" class="accordion-collapse collapse" data-bs-parent="#accordions">
+              <div class="accordion-body">
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, necessitatibus. Error excepturi, porro quo soluta, ullam iure unde, maxime sit suscipit fuga tempora incidunt iusto explicabo fugit! Aspernatur aut consequatur, magnam eveniet commodi consequuntur expedita a officia fugit voluptas impedit maxime eaque quia sint nulla maiores consectetur vitae beatae cupiditate nisi laboriosam praesentium molestiae. Culpa odio exercitationem libero. Magni cumque doloribus tempora natus magnam labore veniam nobis, debitis molestias placeat odio, maxime cupiditate aut est quis eum minima necessitatibus consequuntur? Reiciendis totam ut doloremque sint qui, commodi voluptatibus eos? Vel.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collTwo" aria-expanded="false" aria-controls="collTwo">
+                <h6>Lorem ipsum dolor sit amet consectetur?</h6>
+              </button>
+            </h2>
+            <div id="collTwo" class="accordion-collapse collapse" data-bs-parent="#accordions">
+              <div class="accordion-body">
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ab repudiandae facilis, rerum a error voluptatem beatae cupiditate fuga deleniti accusantium magnam totam alias nesciunt quibusdam, omnis placeat harum? Non ducimus, minima iure quos aut aspernatur harum repudiandae animi sequi perspiciatis culpa consequuntur placeat in minus ipsum sint commodi voluptatem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- accordion  -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- tooltip -->
+<!-- <p class="muted">Placeholder text to demonstrate some <a href="index.html" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p> -->
+<!-- tooltip -->
+
+
+<!-- scroolspy -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Section 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Section 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Section 3</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+  <h1>Section 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+<div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+  <h1>Section 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+<div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+  <h1>Section 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<!-- scroolspy -->
+
+
+
+
+  <script src="javascript/bootstrap.bundle.min.js"></script>
+  <script src="javascript/script.js"></script>
+</body>
+</html>
